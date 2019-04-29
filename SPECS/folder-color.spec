@@ -68,7 +68,8 @@ done
 
 %files common
 %defattr(-,root,root)
-%doc COPYING
+#%doc COPYING
+%doc COPYING.GPL3
 %{python3_sitelib}/%{_name}_common-*
 %{_datadir}/icons/hicolor/*/*/
 %{_datadir}/locale/*/*/
