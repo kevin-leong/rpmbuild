@@ -4,14 +4,17 @@
 
 %define _name   folder_color
 Name:           folder-color
-Version:        0.0.86
+#Version:        0.0.86
+Version:        0.0.88
 Release:        0
 Summary:	Folder Color
 License:        GPL-3.0+
 Group:          Productivity/File utilities
 Url:            https://launchpad.net/folder-color
-Source0:        http://archive.ubuntu.com/ubuntu/pool/universe/f/%{name}-common/%{name}-common_%{version}.orig.tar.gz
-Source1:        http://archive.ubuntu.com/ubuntu/pool/universe/f/%{name}/%{name}_%{version}.orig.tar.gz
+#Source0:        http://archive.ubuntu.com/ubuntu/pool/universe/f/%{name}-common/%{name}-common_%{version}.orig.tar.gz
+#Source1:        http://archive.ubuntu.com/ubuntu/pool/universe/f/%{name}/%{name}_%{version}.orig.tar.gz
+Source0:        https://launchpad.net/~costales/+archive/ubuntu/folder-color/+sourcefiles/%{name}-common/%{version}/%{name}-common_%{version}.tar.gz
+Source1:        https://launchpad.net/~costales/+archive/ubuntu/folder-color/+sourcefiles/%{name}/%{version}/%{name}_%{version}.tar.gz
 BuildRequires:  fdupes
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  intltool
