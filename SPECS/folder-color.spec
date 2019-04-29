@@ -45,11 +45,14 @@ Requires:       nautilus-python
 Nautilus extension for Folder Color
 
 %prep
-%setup -q -n %{name}-common
-%setup -q -D -T -a 1 -n %{name}-common
+#%setup -q -n %{name}-common
+#%setup -q -D -T -a 1 -n %{name}-common
+%setup -q -n common
+%setup -q -D -T -a 1 -n common
 mv -f nautilus %{name}-nautilus
 
-chmod a-x COPYING
+#chmod a-x COPYING
+chmod a-x COPYING.GPL3
 sed -i '/name/s/%{name}/%{name}-nautilus/' %{name}-nautilus/setup.py
 
 %build
@@ -72,6 +75,7 @@ done
 
 %files -n %{name}-nautilus
 %defattr(-,root,root)
-%doc COPYING
+#%doc COPYING
+%doc COPYING.GPL3
 %{python3_sitelib}/%{_name}_nautilus-*
 %{_datadir}/nautilus-python/
