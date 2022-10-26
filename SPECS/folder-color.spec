@@ -1,7 +1,7 @@
 %define _name folder_color
 
 Name: folder-color
-Version: 0.0.91
+Version: 0.1.9
 Release: 1
 Summary: Folder Color
 License: GPL-3.0+
@@ -21,7 +21,7 @@ Requires: nautilus-python
 Folder Color allows one to choose the color or emblem of a folder in nautilus
 
 %package common
-Version: 0.0.93
+Version: 0.1.3
 Summary: Folder Color common files
 Group: Productivity/File utilities
 Source: https://launchpad.net/~costales/+archive/ubuntu/folder-color/+sourcefiles/%{name}-common/%{version}/%{name}-common_%{version}.tar.gz
