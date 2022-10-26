@@ -37,7 +37,7 @@ Folder Color common files
 # nothing to build
 
 %install
-for dir in . %{name}; do
+for dir in . common; do
     pushd $dir
     %{__python3} setup.py install --root=%{buildroot} --prefix=%{_prefix}
     popd
