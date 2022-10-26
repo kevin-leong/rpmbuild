@@ -46,13 +46,11 @@ done
 
 %files
 %defattr(-,root,root)
-%doc /usr/share/doc/%{name}/
 %{python3_sitelib}/%{_name}-*
 %{_datadir}/nautilus-python/
 
 %files common
 %defattr(-,root,root)
-%doc /usr/share/doc/%{name}-common/
 %{python3_sitelib}/%{_name}_common-*
 %{_datadir}/icons/hicolor/*/*/
 %{_datadir}/locale/*/*/
