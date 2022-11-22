@@ -46,7 +46,7 @@ done
 
 %files
 %defattr(-,root,root)
-%doc /usr/share/doc/%{name}/
+#%doc /usr/share/doc/%{name}/
 %{python3_sitelib}/%{_name}-*
 %{_datadir}/nautilus-python/
 
