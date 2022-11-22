@@ -1,7 +1,7 @@
 %define _name folder_color
 
 Name: folder-color
-Version: 0.1.9
+Version: 0.2.7
 Release: 1
 Summary: Folder Color
 License: GPL-3.0+
